@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="text-align: left !important; direction: ltr !important; mso-text-raise: 0;" align="left">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
     <title>Email</title>
-    <style>
+    <style type="text/css">
+        /* Gmail App fix */
+        u ~ div .email-container {
+            min-width: 100vw;
+        }
+        
+        /* Gmail mobile webkit fix */
+        [style*="Fira Sans"], [style*="Open Sans"], [style*="sans-serif"] {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        /* Reset all elements */
+        body, table, td, p, a, li, blockquote {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            text-align: left !important;
+            direction: ltr !important;
+        }
+        
+        /* Reset all text elements */
+        body, div, p, h1, h2, h3, h4, h5, h6, a, span, strong, em, li, td, th, label, input, textarea, select, button, table, tr, td, .gs, .gs * {
+            text-align: left !important;
+            mso-line-height-rule: exactly;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            direction: ltr !important;
+        }
+        
+        /* Gmail desktop webmail fix */
+        .msg-html-content {
+            text-align: left !important;
+            direction: ltr !important;
+        }
+        
+        /* Force left alignment in all table cells */
+        table, td, .gs, .gs * {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+            text-align: left !important;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: white;
-            color: #333;
+            margin: 0 !important;
+            padding: 20px !important;
+            background-color: white !important;
+            color: #333 !important;
             text-align: left !important;
+            direction: ltr !important;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
         }
         
         .email-container {
@@ -24,13 +67,15 @@
             overflow: visible;
         }
         
-        .email-body {
-            padding: 0;
+        .email-body, .email-body * {
+            padding: 0 !important;
             min-height: 400px;
-            line-height: 1.6;
-            font-size: 14px;
+            line-height: 1.6 !important;
+            font-size: 14px !important;
             text-align: left !important;
-            background: transparent;
+            background: transparent !important;
+            direction: ltr !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
         }
         
         .signature {
@@ -42,10 +87,11 @@
             text-align: left;
         }
         
-        .message-content {
+        .message-content, .message-content * {
             text-align: left !important;
-            margin: 0;
-            padding: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+            direction: ltr !important;
         }
         
         /* Force all text elements to be left-aligned */
@@ -63,8 +109,10 @@
             margin-right: auto !important;
         }
         
-        .message-content p {
-            margin: 20px 0;
+        .message-content p, p, .message-content p * {
+            margin: 20px 0 !important;
+            text-align: left !important;
+            direction: ltr !important;
         }
         
         .casual-break {
