@@ -1,182 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="text-align: left !important; direction: ltr !important; mso-text-raise: 0;" align="left">
+<html lang="pt-BR">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="x-apple-disable-message-reformatting">
     <title>Email</title>
-    <style type="text/css">
-        /* Gmail App fix */
-        u ~ div .email-container {
-            min-width: 100vw;
-        }
-        
-        /* Gmail mobile webkit fix */
-        [style*="Fira Sans"], [style*="Open Sans"], [style*="sans-serif"] {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        }
-        /* Reset all elements */
-        body, table, td, p, a, li, blockquote {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            text-align: left !important;
-            direction: ltr !important;
-        }
-        
-        /* Reset all text elements */
-        body, div, p, h1, h2, h3, h4, h5, h6, a, span, strong, em, li, td, th, label, input, textarea, select, button, table, tr, td, .gs, .gs * {
-            text-align: left !important;
-            mso-line-height-rule: exactly;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            direction: ltr !important;
-        }
-        
-        /* Gmail desktop webmail fix */
-        .msg-html-content {
-            text-align: left !important;
-            direction: ltr !important;
-        }
-        
-        /* Force left alignment in all table cells */
-        table, td, .gs, .gs * {
-            mso-table-lspace: 0pt !important;
-            mso-table-rspace: 0pt !important;
-            text-align: left !important;
-        }
+    <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
             margin: 0 !important;
             padding: 20px !important;
             background-color: white !important;
             color: #333 !important;
             text-align: left !important;
-            direction: ltr !important;
-            width: 100% !important;
-            -webkit-text-size-adjust: 100% !important;
-            -ms-text-size-adjust: 100% !important;
         }
         
         .email-container {
-            max-width: 800px;
-            margin: 0;
-            margin-left: 0;
-            background: transparent;
-            border-radius: 0;
-            box-shadow: none;
-            overflow: visible;
+            max-width: 800px !important;
+            margin: 0 !important;
+            margin-left: 0 !important;
+            background: transparent !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            overflow: visible !important;
+            text-align: left !important;
         }
         
-        .email-body, .email-body * {
+        .email-body {
             padding: 0 !important;
-            min-height: 400px;
+            min-height: 400px !important;
             line-height: 1.6 !important;
             font-size: 14px !important;
             text-align: left !important;
             background: transparent !important;
-            direction: ltr !important;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
         }
         
         .signature {
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: none;
-            color: #666;
-            font-size: 13px;
-            text-align: left;
+            margin-top: 30px !important;
+            padding-top: 15px !important;
+            border-top: none !important;
+            color: #666 !important;
+            font-size: 13px !important;
+            text-align: left !important;
         }
         
-        .message-content, .message-content * {
+        .message-content {
             text-align: left !important;
             margin: 0 !important;
             padding: 0 !important;
-            direction: ltr !important;
         }
         
-        /* Force all text elements to be left-aligned */
-        div, p, h1, h2, h3, h4, h5, h6, span, a, li, td, th, label, input, textarea, select, button {
-            text-align: left !important;
-            margin-left: 0 !important;
-            margin-right: auto !important;
-            float: none !important;
-        }
-        
-        /* Reset any centering */
-        .center, .text-center, [align="center"], [style*="text-align: center"], [style*="text-align:center"] {
-            text-align: left !important;
-            margin-left: 0 !important;
-            margin-right: auto !important;
-        }
-        
-        .message-content p, p, .message-content p * {
+        .message-content p {
             margin: 20px 0 !important;
             text-align: left !important;
-            direction: ltr !important;
         }
         
         .casual-break {
-            margin: 25px 0;
+            margin: 25px 0 !important;
+            text-align: left !important;
         }
         
         .message-content ul {
-            margin: 25px 0;
-            padding-left: 20px;
+            margin: 25px 0 !important;
+            padding-left: 20px !important;
+            text-align: left !important;
         }
         
         .message-content li {
-            margin: 20px 0;
-            line-height: 1.8;
+            margin: 20px 0 !important;
+            line-height: 1.8 !important;
+            text-align: left !important;
+        }
+        
+        /* Force left alignment for all text elements */
+        * {
+            text-align: left !important;
+        }
+        
+        /* Override any center alignment that might be applied */
+        div, p, span, td, th, h1, h2, h3, h4, h5, h6 {
+            text-align: left !important;
         }
     </style>
 </head>
-<body>
-    <div class="email-container">
-        <div class="email-body">
-            <div class="message-content" id="emailContent">
-                <p>Olá *|NOME|*,</p>
+<body style="text-align: left !important;">
+    <div class="email-container" style="text-align: left !important;">
+        <div class="email-body" style="text-align: left !important;">
+            <div class="message-content" id="emailContent" style="text-align: left !important;">
+                <p style="text-align: left !important;">Olá *|NOME|*,</p>
                 
-                <p>Se você acredita que o principal papel da Inteligência Artificial no R&S é automatizar a triagem de currículos e agendar entrevistas, você está vendo apenas a ponta do iceberg.</p>
+                <p style="text-align: left !important;">Se você acredita que o principal papel da Inteligência Artificial no R&S é automatizar a triagem de currículos e agendar entrevistas, você está vendo apenas a ponta do iceberg.</p>
                 
-                <p>A verdadeira revolução da IA não está em fazer o trabalho operacional <em>mais rápido</em>. Está em nos dar a capacidade de fazer um trabalho <strong>estratégico que antes era impossível.</strong></p>
+                <p style="text-align: left !important;">A verdadeira revolução da IA não está em fazer o trabalho operacional <em>mais rápido</em>. Está em nos dar a capacidade de fazer um trabalho <strong>estratégico que antes era impossível.</strong></p>
                 
-                <div class="casual-break"></div>
+                <div class="casual-break" style="text-align: left !important;"></div>
                 
-                <p>A automação economiza tempo. A verdadeira inteligência <strong>gera valor, mitiga riscos e constrói uma vantagem competitiva.</strong></p>
+                <p style="text-align: left !important;">A automação economiza tempo. A verdadeira inteligência <strong>gera valor, mitiga riscos e constrói uma vantagem competitiva.</strong></p>
                 
-                <p>E se, antes mesmo de postar uma vaga, você pudesse usar a IA para ter:</p>
+                <p style="text-align: left !important;">E se, antes mesmo de postar uma vaga, você pudesse usar a IA para ter:</p>
                 
-                <ul>
-                    <li><strong>Um Panorama de Mercado Completo:</strong> Entender a fundo a senioridade, as faixas salariais e as competências mais valorizadas para o profissional que você procura, baseando sua estratégia em dados, não em achismos.</li>
+                <ul style="text-align: left !important;">
+                    <li style="text-align: left !important;"><strong>Um Panorama de Mercado Completo:</strong> Entender a fundo a senioridade, as faixas salariais e as competências mais valorizadas para o profissional que você procura, baseando sua estratégia em dados, não em achismos.</li>
                     
-                    <li><strong>Análises Profundas de Candidatos:</strong> Ir além do currículo e obter um dossiê com dezenas de análises sobre o perfil comportamental, os motivadores e, o mais importante...</li>
+                    <li style="text-align: left !important;"><strong>Análises Profundas de Candidatos:</strong> Ir além do currículo e obter um dossiê com dezenas de análises sobre o perfil comportamental, os motivadores e, o mais importante...</li>
                     
-                    <li><strong>Predição de Sucesso:</strong> Ter insights preditivos sobre o potencial de retenção de um candidato e seu real <em>matching</em> com a cultura e os desafios da sua empresa.</li>
+                    <li style="text-align: left !important;"><strong>Predição de Sucesso:</strong> Ter insights preditivos sobre o potencial de retenção de um candidato e seu real <em>matching</em> com a cultura e os desafios da sua empresa.</li>
                 </ul>
                 
-                <div class="casual-break"></div>
+                <div class="casual-break" style="text-align: left !important;"></div>
                 
-                <p>Por isso, temos o prazer de te convidar para a nossa primeira <strong>Harpio Intelligence Masters</strong>, uma masterclass gratuita e ao vivo com o tema:</p>
+                <p style="text-align: left !important;">Por isso, temos o prazer de te convidar para a nossa primeira <strong>Harpio Intelligence Masters</strong>, uma masterclass gratuita e ao vivo com o tema:</p>
                 
-                <p><strong>"Além da Automação: Como Usar a IA para Análise Preditiva e Inteligência de Mercado no R&S"</strong></p>
+                <p style="text-align: left !important;"><strong>"Além da Automação: Como Usar a IA para Análise Preditiva e Inteligência de Mercado no R&S"</strong></p>
                 
-                <div class="casual-break"></div>
+                <div class="casual-break" style="text-align: left !important;"></div>
                 
-                <p><strong>Data:</strong> Terça-feira, 30 de setembro de 2025 <strong>Horário:</strong> 10:00h às 11:00h (Horário de Brasília) <strong>Onde:</strong> Online e Ao Vivo</p>
+                <p style="text-align: left !important;"><strong>Data:</strong> Terça-feira, 30 de setembro de 2025 <strong>Horário:</strong> 10:00h às 11:00h (Horário de Brasília) <strong>Onde:</strong> Online e Ao Vivo</p>
                 
-                <p>As vagas são limitadas para garantir a qualidade da interação. Reserve a sua agora.</p>
+                <p style="text-align: left !important;">As vagas são limitadas para garantir a qualidade da interação. Reserve a sua agora.</p>
                 
-                <p><a href="https://info.harpio.com.br/masterclass" target="_blank" style="color: #4285f4; text-decoration: none; font-weight: bold;">Clique aqui para se inscrever na masterclass</a></p>
+                <p style="text-align: left !important;"><a href="https://info.harpio.com.br/masterclass" target="_blank" style="color: #4285f4; text-decoration: none; font-weight: bold; text-align: left !important;">Clique aqui para se inscrever na masterclass</a></p>
                 
-                <div class="casual-break"></div>
+                <div class="casual-break" style="text-align: left !important;"></div>
                 
-                <p>Atenciosamente,</p>
+                <p style="text-align: left !important;">Atenciosamente,</p>
                 
-                <div class="signature">
-                    <p><strong>Gustavo Parise</strong><br>
+                <div class="signature" style="text-align: left !important;">
+                    <p style="text-align: left !important;"><strong>Gustavo Parise</strong><br>
                     Co-Founder / CCPO<br>
                     Harpio<br>
-                    <a href="https://www.linkedin.com/in/parise/" target="_blank" style="color: #4285f4; text-decoration: none;">LinkedIn: Gustavo Parise</a></p>
+                    <a href="https://www.linkedin.com/in/parise/" target="_blank" style="color: #4285f4; text-decoration: none; text-align: left !important;">LinkedIn: Gustavo Parise</a></p>
                 </div>
             </div>
         </div>
